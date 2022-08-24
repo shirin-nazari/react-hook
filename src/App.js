@@ -1,4 +1,5 @@
 import './App.css';
+import ContextTutorial from './useContext/ContextTutorial';
 import EffectTutorial from './useEffect/EffectTutorial';
 import ImperativeHandleTutorial from './useImperativeHandle/ImperativeHandleTutorial';
 import LayoutEffectTutorial from './useLayoutEffect/LayoutEffectTutorial';
@@ -13,8 +14,9 @@ function App() {
       <ReducerTutorial />
       <EffectTutorial />
       <RefTutorial /> */}
-      <LayoutEffectTutorial />
+      {/* <LayoutEffectTutorial /> */}
       <ImperativeHandleTutorial />
+      <ContextTutorial />
     </div>
   );
 }
