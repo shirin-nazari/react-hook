@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Button from './Button'
 
 function ImperativeHandleTutorial() {
+  const buttonRef = useRef(null)
   return (
     <div>
-      <button>Button From Parent</button>
-      <Button />
+      <button onClick={() => { buttonRef.current.alertToggle() }}>Button From Parent</button>
+      <Button ref={buttonRef} />
     </div>
   )
 }
